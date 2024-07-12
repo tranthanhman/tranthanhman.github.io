@@ -1,0 +1,84 @@
+.splitting {
+  cursor: pointer;
+}
+
+// --- Jogging effect ----
+.splitting--jog {
+  .word,
+  .char {
+    display: inline-block;
+    position: relative;
+    color: $white;
+    animation-delay: var(--del);
+    animation-direction: var(--dir, normal);
+    animation-duration: var(--dur);
+    animation-iteration-count: var(--it, infinite);
+    animation-name: var(--name);
+    animation-timing-function: var(--tf);
+    animation-fill-mode: var(--fill, forwards);
+    transform-origin: 50% 100%;
+    z-index: 1;
+  }
+
+  .char {
+    --name: jog;
+    --dur: 500ms;
+    --del: calc(var(--char-index) * -0.025s);
+    --tf: linear;
+  }
+
+  @include keyframes(jog) {
+    0% {
+      @include transform(translate(0, 0) rotate(5deg))
+    }
+    25% {
+      @include transform(translate(5%, -5%) rotate(10deg))
+    }
+    50% {
+      @include transform(translate(5%, 0) rotate(15deg))
+    }
+    75% {
+      @include transform(translate(10%, -5%) rotate(10deg))
+    }
+    100% {
+      @include transform(translate(0, 0) rotate(5deg))
+    }
+  }
+}
+// --- Jogging effect -end ----
+
+
+// --- Slide Over effect ----
+.splitting--slide-over {
+  .cell {
+    opacity: 1;
+    &:nth-child(even) {
+     @include animation(slide-over-even 0.6s cubic-bezier(0.55, 0.1, 0.15, 0.95)
+                        calc(0.1s * var(--cell-index)) both)
+    }
+
+    &:nth-child(odd) {
+     @include animation(slide-over-odd 0.6s cubic-bezier(0.55, 0.1, 0.15, 0.95)
+                        calc(0.1s * var(--cell-index)) both)
+    }
+  }
+
+  ~ .loading-title {
+    opacity: 0 !important;
+  }
+}
+
+@include keyframes(slide-over-even) {
+  to {
+    opacity: 0;
+    @include transform(translateX(-300%))
+  }
+}
+
+@include keyframes(slide-over-odd) {
+  to {
+    opacity: 0;
+    @include transform(translateX(300%))
+  }
+}
+// --- Slide Over effect - end ----

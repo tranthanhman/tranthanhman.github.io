@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" translate="no">
+
+<head>
+  <!-- Page Configuration -->
+  <meta content="en" http-equiv="content-language">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/favicon.ico"
+    type="image/x-icon">
+  <link rel="icon" href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/favicon-16x16.png"
+    type="image/png" sizes="16x16">
+  <link rel="icon" href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/favicon-32x32.png"
+    type="image/png" sizes="32x32">
+  <link rel="icon"
+    href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/android-chrome-192x192.png"
+    type="image/png" sizes="192x192">
+  <link rel="icon"
+    href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/android-chrome-512x512.png"
+    type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon"
+    href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/apple-touch-icon.png"
+    type="image/png" sizes="180x180">
+  <link rel="manifest" href="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/favicon/manifest.json">
+  <!-- Page Configuration - end -->
+
+  <title>Man Tran Curriculum Vitae</title>
+
+  <!-- SEO Configuration -->
+  <meta name="keywords"
+    content="Frontend developer, Frontend, VueJS, NuxtJS, JavaScript, Middle, 3 years of experience, 3+ years, hybrid job">
+  <meta name="description"
+    content="Besides, accomplish customer requirements, also have to focus on UI/UX, write simplified code and scaling thinking. Let's code as if we will maintain it later.">
+  <link rel="sitemap" type="application/xml" href="https://chainnguyen.github.io/chain-curriculum-vitae/sitemap.xml">
+  <link href="https://chainnguyen.github.io/chain-curriculum-vitae/" rel="canonical">
+  <!-- Facebook -->
+  <meta property="og:url" content="https://chainnguyen.github.io/chain-curriculum-vitae/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Chain's Curriculum Vitae">
+  <meta property="og:description"
+    content="Besides, accomplish customer requirements, also have to focus on UI/UX, write simplified code and scaling thinking. Let's code as if we will maintain it later.">
+  <meta property="og:image"
+    content="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/seo-banner.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@chainnguyen">
+  <meta name="twitter:title" content="Chain's Curriculum Vitae">
+  <meta name="twitter:description"
+    content="Besides, accomplish customer requirements, also have to focus on UI/UX, write simplified code and scaling thinking. Let's code as if we will maintain it later.">
+  <meta name="twitter:image"
+    content="https://chainnguyen.github.io/chain-curriculum-vitae/assets/images/seo-banner.webp">
+  <!-- SEO Configuration - end -->
+
+  <!-- Font Configuration -->
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="preload">
+  <!-- Font Configuration - end -->
+
+  <!-- Style Configuration -->
+  <link rel="stylesheet" href="./assets/css/plugin.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- Style Configuration - end -->
+
+  <link rel="preload" href="./assets/js/vendors/locomotive-scroll.min.js" as="script">
+  <link rel="preload" href="./assets/js/vendors/splitting.min.js" as="script">
+  <link rel="preload" href="./assets/js/vendors/css-doodle.min.js" as="script">
+  <link rel="preload" href="./assets/js/vendors/html2canvas.min.js" as="script">
+</head>
+
+<body data-scroll-container>
+  <!-- Custom cursor -->
+  <div id="cursor-dot-outline"></div>
+  <div id="cursor-dot"></div>
+  <!-- Custom cursor - end -->
+
+  <!-- Loading screen -->
+  <div id="loading">
+    <div class="loading-overlay" data-columns="2" data-rows="5">
+      <img src="./assets/images/bg-black.webp" alt="background-all-black">
+    </div>
+    <p class="loading-title splitting--jog" data-splitting>Wait a minutes...</p>
+  </div>
+  <!-- Loading screen - end -->
+
+  <!-- Notice browser does not support -->
+  <div id="browser-dont-support" data-scroll-section>
+    Apologize for your bad experience!<br /> Your browser does not support web components!
+  </div>
+  <!-- Notice browser does not support - end -->
+
+  <css-doodle grid="6">
+    :doodle {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 15px;
+    }
+
+    transition: all .4s ease;
+    border-top: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+    border-right: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+
+    :after {
+    content: \@hex(@rand(9632, 9687));
+    color: hsl(@rand(137.50deg, 360deg), 80%, 80%);
+    }
+
+    @random {
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+    border-left: 1px solid hsl(@rand(137.50deg, 360deg), 80%, 80%);
+    border-style: dashed;
+    }
+  </css-doodle>
+
+  <!-- Internal links -->
+  <a hidden href="./index.html" target="_self">homepage link</a>
+
+  <!-- ==== Content section ==== -->
+  <main id="main" data-scroll-section>
+    <section id="sec-cv">
+      <div class="container cv-container">
+        <!-- Paper header -->
+        <div class="cv-header cv-layout">
+          <figure class="left">
+            <img src="assets/images/avatar.webp" alt="avatar_portfolio">
+          </figure>
+          <div class="right">
+            <div class="cv-header-title">
+              <h2>Tran Thanh Man</h2>
+              <h3>Frontend developer</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper content -->
+        <div class="cv-layout">
+          <div class="left">
+            <!-- Block: Contact -->
+            <div class="block-item block-contact">
+              <address class="block-item-contact">
+                <a class="contact-link" href="https://github.com/tranthanhman" target="_blank">
+                  tranthanhman
+                </a>
+                <i class="fab fa-github"></i>
+              </address>
+
+              <address class="block-item-contact">
+                <a class="contact-link" href="https://www.linkedin.com/in/thanhmantran/" target="_blank">
+                  Man Tran
+                </a>
+                <i class="fab fa-linkedin"></i>
+              </address>
+
+              <address class="block-item-contact">
+                <a class="contact-link" href="tel:0962455419">0962 455 419</a>
+                <i class="fas fa-phone"></i>
+              </address>
+
+              <address class="block-item-contact">
+                <a class="contact-link" href="mailto:tranthanhman.dev@gmail.com">
+                  tranthanhman.dev@gmail.com
+                </a>
+                <i class="fas fa-envelope"></i>
+              </address>
+
+              <div class="block-item-contact download-cv">
+                <span class="contact-link">Download cv</span>
+                <i class="fas fa-cloud-download-alt"></i>
+              </div>
+            </div>
+
+            <!-- Block: Education -->
+            <article class="block-item block-education">
+              <h4 class="block-item-title">Education</h4>
+              <!-- Customize for mobile -->
+              <div class="block-zone-col">
+                <div class="block-item-zone">
+                  <p class="block-education__school">Cao Thang Technical College</p>
+                  <small class="block-education__major">Information Technology</small>
+                  <time class="block-education__period">09/2019 - 10/2022</time>
+                </div>
+              </div>
+            </article>
+
+            <!-- Block: Skills -->
+            <article class="block-item block-skill">
+              <h4 class="block-item-title">Skills</h4>
+
+              <ul class="block-item-list">
+                <li>HTML/HTML5</li>
+                <li>CSS/SCSS</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+                <li>ReactJS</li>
+                <li>TypeScript</li>
+                <li>Tailwind CSS</li>
+                <li>Greensock(GSAP)</li>
+                <li>SEO</li>
+                <li>Git</li>
+                <li>Research</li>
+                <li>Teamwork</li>
+                <li>Time management</li>
+                <li>Open-minded</li>
+              </ul>
+            </article>
+
+            <!-- Block: Hobbies -->
+            <article class="block-item block-hobbies">
+              <h4 class="block-item-title">Hobbies</h4>
+
+              <ul class="block-item-list">
+                <li>Music</li>
+                <li>Travel</li>
+                <li>Badminton</li>
+                <li>Listen Poscat</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="right">
+            <!-- Block: About me -->
+            <article class="block-item">
+              <h4 class="block-item-title">About me</h4>
+
+              <p class="block-item-context">
+                You aim to deepen your expertise in frontend development, particularly with React.js and Next.js,
+                enhance
+                problem-solving skills, and collaborate with experienced developers. You aspire to become a senior
+                frontend developer,
+                lead innovative projects, stay updated with technology trends, contribute to open-source projects, and
+                possibly
+                transition into a full-stack developer role.
+              </p>
+            </article>
+
+            <!-- Block: Experiences -->
+            <article class="block-item">
+              <h4 class="block-item-title">Experiences</h4>
+
+              <!-- Milestone -->
+              <div class="block-item-zone">
+                <h5 class="block-item-subtitle">BCM Venture Integrated | BCMSolutions</h5>
+                <h6 class="block-item-zone__topic">Frontend developer | 2/2022 - 8/2022</h6>
+
+                <ul class="block-item-list">
+                  <li>Developed and maintained responsive web applications using React and Next.js.
+                    Implemented complex animations and interactions using GSAP.</li>
+                  <li>Collaborated with designers to create and integrate UI components using MUI.</li>
+                  <li>Managed state across applications using Redux.</li>
+                  <li>Developed landing pages and websites using WordPress, integrating GSAP animations.</li>
+                  <li>Ensured cross-browser compatibility and optimized performance.</li>
+                  <li>Used Git for version control and collaborated with team members on GitHub.</li>
+                </ul>
+              </div>
+              <!-- Milestone -->
+              <div class="block-item-zone">
+                <h5 class="block-item-subtitle">Pansoft co. Ltd</h5>
+                <h6 class="block-item-zone__topic">Frontend developer | 06/2020 - Present</h6>
+
+                <ul class="block-item-list">
+                  <li>Interned at Pansoft Co. Ltd., specializing in frontend development. Developed interfaces
+                    and functionalities based on designs using Vue.js and Tailwind CSS.</li>
+                  <li>Gained exposure to backend technologies including MongoDB and Nest.js.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Block: Projects -->
+            <article class="block-item">
+              <h4 class="block-item-title">Projects</h4>
+
+              <!-- Item -->
+              <div class="block-item-zone">
+                <h6 class="block-item-zone__topic">CMS Ajinomoto</h6>
+
+                <ul class="block-item-list project-list">
+                  <li>
+                    <strong>Summary:</strong>
+                    Design and develop user interfaces (UIs) for CMS components and modules.Implement responsive UI
+                    layouts that adapt seamlessly to various screen sizes and devices.Integrate APIs into the CMS to
+                    fetch, manipulate, and display data. Handle API responses and errors effectively.
+                  </li>
+                  <li>
+                    <strong>Team sizes:</strong> 6
+                  </li>
+                  <li>
+                    <strong>Timeline:</strong> -
+                  </li>
+                  <li>
+                    <strong>Technical stacks:</strong>ReactJS, Mui Ui, TypeScript, Redux Toolkit, RHForm
+                  </li>
+                </ul>
+              </div>
+              <!-- Item -->
+              <div class="block-item-zone">
+                <h6 class="block-item-zone__topic">Onlinestore247 - Ecommerce Websites</h6>
+
+                <ul class="block-item-list project-list">
+                  <li>
+                    <strong>Summary:</strong>
+                    Develop responsive user interfaces based on Figma designs, ensuring they are visually appealing,
+                    intuitive, and
+                    mobile-optimized. Build reusable UI components for consistency and efficiency. Implement new
+                    features by analyzing
+                    requirements, collaborating with backend engineers, and writing clean, maintainable code. Identify
+                    and fix UI bugs
+                    quickly, optimize website performance, and minimize file sizes. Collaborate effectively with team
+                    members, communicate
+                    clearly, and provide regular project updates.
+                  </li>
+                  <li>
+                    <strong>Team sizes:</strong> 12
+                  </li>
+                  <li>
+                    <strong>Timeline:</strong> 6 months
+                  </li>
+                  <li>
+                    <strong>Technical stacks:</strong>Next.js, SCSS, Context API, Redux ,RHForm
+                  </li>
+                </ul>
+              </div>
+              <!-- Item -->
+              <div class="block-item-zone">
+                <h6 class="block-item-zone__topic">Landing Page Websites</h6>
+
+                <ul class="block-item-list project-list">
+                  <li>
+                    <strong>Summary:</strong>
+                    I specialize in crafting high-converting landing pages using WordPress and Figma. I can
+                    handle the entire process, from designing a user-friendly and responsive UI based on Figma
+                    mockups to building the WordPress backend with custom fields using ACF or Typerocket
+                    plugins. Additionally, I offer bug fixing, website optimization, and code minification for faster
+                    loading times.
+                  </li>
+                  <li>
+                    <strong>Developed and launched landing pages:</strong><br>
+                    • DAD Resort - <a href="https://dadresort.com.vn" target="_blank">(https://dadresort.com.vn)</a><br>
+                    • An Phú Group - <a href="https://anphugroup.com.vn" target="_blank">(https://anphugroup.com.vn)</a><br>
+                    • SmartPay Vietnam - <a href="https://www.smartpayvn.com" target="_blank">(https://www.smartpayvn.com)</a><br>
+                    • SGIIC - (<a href="https://thamdinhgiabatdongsan.vn" target="_blank">https://thamdinhgiabatdongsan.vn)</a><br>
+                    • Startspin Sapporo - <a href="https://star-spin.sapporostarguide.com" target="_blank">(https://star-spin.sapporostarguide.com)</a><br>
+                    • BCM Solutions - <a href="https://bcmsolutions.com.vn" target="_blank">(https://bcmsolutions.com.vn)</a><br>
+                    • Sapporo Vietnam - <a href="https://sapporovietnam.com.vn" target="_blank">(https://sapporovietnam.com.vn)</a><br>
+                    • Pocari sweat run - <a href="https://pocarisweatrun.com.vn" target="_blank">(https://pocarisweatrun.com.vn)</a><br>
+                    • AQUA - <a href="https://aquavietnam.com.vn" target="_blank">(https://aquavietnam.com.vn)</a><br>
+                    • Motul - <a href="https://hanhtrinhthemchat.motulvietnam.com" target="_blank">(https://hanhtrinhthemchat.motulvietnam.com)
+                  </li>
+                  <li>
+                    <strong>Team sizes:</strong> 3
+                  </li>
+                  <li>
+                    <strong>Timeline:</strong> Average 2 weeks to 2 months
+                  </li>
+                  <li>
+                    <strong>Technical stacks:</strong> WordPress, SCSS, Jquery, GSAP, Webpack, Gubp, ACF , Typerocket
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Block: Sincerely -->
+            <div class="block-item">
+              <h4 class="block-item-title">Sincerely,</h4>
+              <p class="block-item-context">Tran Thanh Man</p>
+              <p class="block-item-context">Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--[if lt IE 8]>
+<p class="browser-upgrade">
+  You are using an <strong>outdated</strong> browser. Please
+  <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a>
+  to improve your experience.
+</p>
+<![endif]-->
+
+  <!-- Javascript Configuration -->
+  <!-- Shout out: https://locomotivemtl.github.io/locomotive-scroll/ -->
+  <script src="./assets/js/vendors/locomotive-scroll.min.js"></script>
+  <!-- Shout out: https://splitting.js.org/guide.html#what-is-splitting -->
+  <script src="./assets/js/vendors/splitting.min.js"></script>
+  <!-- Shout out: https://css-doodle.com/ -->
+  <script src="./assets/js/vendors/css-doodle.min.js"></script>
+  <!-- Shout out: https://github.com/niklasvh/html2canvas -->
+  <script src="./assets/js/vendors/html2canvas.min.js"></script>
+
+  <!-- Run library and app logic  -->
+  <script src="./assets/js/plugins/locomotive-scroll.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/splitting.js" type="text/javascript"></script>
+  <script src="./assets/js/main.js" type="text/javascript"></script>
+  <!-- Javascript Configuration - end -->
+</body>
+
+</html>

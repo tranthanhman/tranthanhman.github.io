@@ -1,0 +1,7 @@
+@import "font-page.css";
+
+/* Shout out: https://locomotivemtl.github.io/locomotive-scroll/ */
+@import "vendors/locamotive-scroll.min.css";
+/* Shout out: https://splitting.js.org/guide.html#what-is-splitting */
+@import "vendors/splitting.css";
+@import "vendors/splitting-cells.css";

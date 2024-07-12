@@ -1,0 +1,101 @@
+/**
+* Adds a browser prefix to the property
+* @param {*} $property Property
+* @param {*} $value Value
+*/
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property} : #{$value};
+  -moz-#{$property}   : #{$value};
+  -ms-#{$property}    : #{$value};
+  -o-#{$property}     : #{$value};
+  #{$property}        : #{$value};
+}
+
+/**
+* Keyframes
+* @param {*} $animation-name - Animation name
+* @content [Animation css]
+*/
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+/**
+* Animation
+* @param {*} $str - name duration timing-function delay iteration-count direction fill-mode play-state ([http://www.w3schools.com/cssref/css3_pr_animation.asp](http://www.w3schools.com/cssref/css3_pr_animation.asp))
+* @require {mixin} css3-prefix
+*/
+@mixin animation($str) {
+  @include css3-prefix('animation', $str);
+}
+
+/**
+* Border Radius
+* @param {Size} $radius [5px] - Radius
+* @require {mixin} css3-prefix
+*/
+@mixin border-radius($radius: 5px) {
+  @include css3-prefix('border-radius', $radius);
+}
+
+/**
+* Transform
+* @param {List} $params - Params
+* @require {mixin} css3-prefix
+*/
+@mixin transform($params) {
+  @include css3-prefix('transform', $params);
+}
+
+/**
+* Transform-Origin
+* @param {List} $params - Params
+* @require {mixin} css3-prefix
+*/
+@mixin transform-origin($params) {
+  @include css3-prefix('transform-origin', $params);
+}
+
+/**
+* Transition
+* @param {List} $properties - Properties
+* @require {mixin} css3-prefix
+*/
+@mixin transition($properties...) {
+  @if length($properties) >= 1 {
+    @include css3-prefix('transition', $properties);
+  } @else {
+    @include css3-prefix('transition', "all 0.25s cubic-bezier(0.55, 0.1, 0.15, 0.95)");
+  }
+}
+
+// Flex
+@mixin flex() {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Inline Flex
+@mixin flex-inline() {
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}

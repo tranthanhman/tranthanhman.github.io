@@ -1,0 +1,109 @@
+#header {
+  height: 100vh;
+  @media #{$info-ipad} {
+    height: 100vh;
+  }
+
+  .header_banner {
+    @include flex();
+    align-items: center;
+    .header_title {
+      font-size: 7vw;
+      display: inline-block;
+      color: $white;
+      text-transform: uppercase;
+      margin: 0;
+      @media #{$info-desktop} {
+        font-size: 6.5vw;
+      }
+      @media #{$info-ipad} {
+        font-size: 14.5vw;
+        margin-bottom: 30vw;
+      }
+
+      span {
+        display: inline-block;
+        color: $blue-light;
+        letter-spacing: -1.17vw;
+        @media #{$info-ipad} {
+          letter-spacing: -3vw;
+        }
+      }
+    }
+  }
+}
+
+#scroll-down {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  padding-top: 2.47vw;
+  opacity: 1;
+  pointer-events: none;
+  @include transform(translateX(-50%));
+  @include transition();
+  @media #{$info-ipad} {
+    bottom: 15%;
+    padding-top: 11.5vw;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -0.02vw;
+    left: 50%;
+    width: 0.13vw;
+    height: 3vw;
+    margin-left: -0.05vw;
+    background: $blue-light;
+    @include animation(slide-down 1.2s cubic-bezier(1, 0, 0, 1) infinite);
+    @media #{$info-ipad} {
+      top: -0.02vw;
+      left: 50%;
+      width: 0.5vw;
+      height: 15vw;
+      margin-left: -0.3vw;
+    }
+  }
+
+  .arrow-down {
+    display: block;
+    margin: 0 auto;
+    &::after {
+      content: '';
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 0.4vw;
+      height: 0.4vw;
+      border-top: 0.15vw solid $blue-light;
+      border-right: 0.15vw solid $blue-light;
+      @include transform(rotate(135deg));
+      @media #{$info-ipad} {
+        width: 3vw;
+        height: 3vw;
+        border-top-width: 0.4vw;
+        border-right-width: 0.4vw;
+      }
+    }
+  }
+}
+
+@include keyframes (slide-down) {
+  0% {
+    @include transform-origin(0% 0%);
+    @include transform(scale(1, 0))
+  }
+  50% {
+    @include transform-origin(0% 0%);
+    @include transform(scale(1, 1))
+  }
+  50.1% {
+    @include transform-origin(0% 100%);
+    @include transform(scale(1, 1))
+  }
+  100% {
+    @include transform-origin(0% 100%);
+    @include transform(scale(1, 0))
+  }
+}

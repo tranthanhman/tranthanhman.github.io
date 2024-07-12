@@ -1,0 +1,28 @@
+$main-font: 'Inter', system-ui, -apple-system, sans-serif;
+
+// Breakpoint responsive
+$info-desktop: "only screen and (max-width : 1919px)";
+$info-laptop-medium: "only screen and (max-width : 1440px)";
+$info-laptop-normal: "only screen and (max-width : 1368px)";
+$info-laptop-small: "only screen and (max-width : 1280px)";
+$info-laptop-smallest: "only screen and (max-width : 1200px)";
+$info-ipad-pro: "only screen and (max-width : 992px)";
+$info-ipad: "only screen and (max-width : 768px)";
+$info-phone-normal: "only screen and (max-width : 576px)";
+$info-phone-small: "only screen and (max-width : 341px)";
+
+
+// Color
+$white: #ffffff;
+$primary-black: #333333;
+$secondary-black: #121212;
+$blue-light: #00C9B1;
+$cursor-dot: #dc5656;
+$cursor-dot-outline: mix(white, $cursor-dot, 25%);
+$scroll-bar-color: #cfcfcf;
+$cv-primary: #f2f2f2;
+$cv-secondary: #D7C0AE;
+$cv-title: #606060;
+$cv-title-dark: #a3a3a3;
+$cv-text: #636363;
+$cv-text-dark: #9b9999;
